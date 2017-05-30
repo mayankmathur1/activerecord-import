@@ -1,6 +1,7 @@
 source :gemcutter
 
 gem "activerecord", ">= 3.0pre"
+gem "makara"
 
 group :development do
   gem "rake"
@@ -24,7 +25,7 @@ group :test do
   # Support libs
   gem "factory_girl", "~> 1.3.3"
   gem "delorean", "~> 0.2.0"
-  
+
   # Debugging
   platforms :mri_18 do
     gem "ruby-debug", "= 0.10.4"

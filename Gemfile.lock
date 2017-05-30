@@ -37,6 +37,8 @@ GEM
     linecache (0.43)
     linecache19 (0.5.12)
       ruby_core_source (>= 0.1.4)
+    makara (0.3.7)
+      activerecord (>= 3.0.0)
     multi_json (1.0.3)
     mysql (2.8.1)
     mysql2 (0.2.7)
@@ -74,6 +76,7 @@ DEPENDENCIES
   factory_girl (~> 1.3.3)
   jdbc-mysql
   jeweler (>= 1.4.0)
+  makara
   mysql (~> 2.8.1)
   mysql2 (~> 0.2.4)
   pg (~> 0.9)
