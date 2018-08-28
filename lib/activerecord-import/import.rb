@@ -305,7 +305,7 @@ class ActiveRecord::Base
           if !sequence_name.blank? && column.name == primary_key && val.nil?
              connection.next_value_for_sequence(sequence_name)
           else
-            connection.quote(column.type_cast_for_database(val), column)
+            connection.quote(connection.type_cast(val, column), column)
           end
         end
         "(#{my_values.join(',')})"
